@@ -1,5 +1,7 @@
 public class Main2 {
 
+
+
     public static void main(String[] args) {
 
         printMyName();
@@ -20,9 +22,10 @@ public class Main2 {
         System.out.println("The result is: " + restImpartire(30,5));
         System.out.println("The temperature in celsius is: " + tempConversion(200));
         System.out.println("The distance in meter is: " + distConversion(100));
-        System.out.println("The result is: " + speedConversion(3000, 3,10,7));
+     //   System.out.println("The result is: " + speedConversion(3000, 3,10,7));
     }
 
+    //Methods
     public static void printMyName() {
 
         System.out.println("Hello \nEcaterina");
