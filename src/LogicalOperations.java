@@ -120,7 +120,93 @@ public class LogicalOperations {
         }
         return"Not aplicable";
     }
+    //Tema 12 For Loops
+    //Ex 1
+    public void printToOneHundred(int x) {
+        for (int i = x; i <= 100; i++) {
+            System.out.println(i);
+        }
+
+    }
+    //Ex 2
+    public void printToMinusOneHundred(int x) {
+        for (int i = x; i >= -100; i--) {
+            System.out.println(i);
+        }
+
+    }
+    //Ex 3
+    public void printBetweenNumbers(int a, int b){
+        if (a < b){
+            for (int i = a; i <= b; i++) {
+                System.out.println(i);
+        }
+        }else if (a > b){
+            for (int i = a; i >= b; i--) {
+                System.out.println(i);
+            }
+        }
+    }
+    //Ex 4
+    public void printFromSmallToBig(int a, int b){
+        if (a > b){
+            for (int i = b; i <= a; i++){
+                System.out.println(i);
+            }
+        }else {
+            for (int i = a; i <= b; i++){
+                System.out.println(i);
+            }
+        }
+    }
+    //Ex 5
+    public void printEvenToHundred(){
+        for (int i = 1; i <= 100; i++){
+            if (i % 2 == 0){
+                System.out.println(i);
+            }
+        }
+    }
+    //Ex 6
+    public void printOddToHundred(){
+        for (int i = 1; i <= 100; i++){
+            if (i % 2 != 0){
+                System.out.println(i);
+            }
+        }
+    }
+    //Ex 7
+    public void printSumToHundred(int c){
+        int sum = 0;
+        for (int i = c; i <= 100; i++){
+            sum = sum + i;
+        }
+        System.out.println(sum);
+    }
+    //Ex 8
+    public void sumAndAverage(int d) {
+        double sum = 0;
+        double count = 0;
+        for (int i = d; i <= 100; i++) {
+            sum = sum + i;
+            count = count + 1;
+        }
+        System.out.println(sum/count);
+    }
+    //Ex 9
+    public void printModel(){
+
+        for (int i = 6; i >= 0; i--)
+        {
+            for(int j=0; j <= i; j++)
+            {
+                System.out.print("*");
+            }
+            System.out.print("\n");
+        }
+    }
+
+
 
 
 }
-
