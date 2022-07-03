@@ -315,6 +315,7 @@ public class LogicalOperations {
             start++ ;
         }
     }
+    //Ex 10
     public void cozaLozaWoza(){
         System.out.println("");
         int start = 1;
