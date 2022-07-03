@@ -24,7 +24,31 @@ public class Main4 {
         op.sumAndAverage(d);
         //Ex 9
         op.printModel();
+
+        //While Loops
+        //Ex 1
+        op.wCountToHundred(80);
+        //Ex 2
+        op.wCountToMinusHundred(3);
+        //Ex 3
+        op.wCountBetweenNumbers(10,3);
+        //Ex 4
+        op.wCountFromSmallToBig(34,20);
+        //Ex 5
+        op.wPrintEvenToHundred();
+        //Ex 6
+        op.wPrintOddToHundred();
+        //Ex 7
+        op.getAverageInInterval(111,8899);
+        //Ex 8
+        op.wGetAverage(1 ,30);
+        //Ex 9
+        op.fibonacci();
+        //Ex 10
+        op.cozaLozaWoza();
+
     }
+
 
 
 }

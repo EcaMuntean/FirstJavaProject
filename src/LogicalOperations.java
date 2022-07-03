@@ -206,7 +206,159 @@ public class LogicalOperations {
         }
     }
 
+    //Tema 12 While Loops
+    //Ex 1
+    public void wCountToHundred(int x){
+        while (x <=100){
+            System.out.println(x);
+            x++;
+        }
+    }
+    //Ex 2
+    public void wCountToMinusHundred(int x){
+        while (x >= -100){
+            System.out.println(x);
+            x--;
+        }
+    }
+    //Ex 3
+    public void wCountBetweenNumbers(int a, int b){
+        if (a < b){
+            while (a <= b){
+                System.out.println(a);
+                a++;
+            }
+        }else {
+            while (a >= b){
+                System.out.println(a);
+                a--;
+            }
+        }
+    }
+    //Ex 4
+    public void wCountFromSmallToBig(int a, int b){
+        if (a < b){
+            while (a <= b){
+                System.out.println(a);
+                a++;
+            }
+        }else {
+            while (b <= a){
+                System.out.println(b);
+                b++;
+            }
+        }
+
+    }
+    //Ex 5
+    public void wPrintEvenToHundred(){
+        int start = 1;
+        int finish = 100;
+        while (start <= finish){
+            if (start % 2 == 0){
+                System.out.println(start);
+                }
+            start++;
+        }
+    }
+    //Ex 6
+    public void wPrintOddToHundred(){
+        int start = 1;
+        int finish = 100;
+        while (start <= finish){
+            if (start % 2 != 0){
+                System.out.println(start);
+            }
+            start++;
+        }
+
+    }
+    //Ex 7
+    public double getAverageInInterval(int start, int finish) {
+
+        int sum = 0;
+        double count = 0;
+        while (start <= finish) {
+            sum = sum + start;
+            start++;
+            count++;
+        }
+        System.out.println(sum);
+        System.out.println(sum/count);
+        return sum/count ;
+    }
+    //Ex 8
+    public void wGetAverage(int a , int b){
+        double count = 0 ;
+        int sum = 0;
+        while (a <= b){
+            if (a % 7 ==0 ){
+             sum = sum +a ;
+             count ++;
+
+            }
+            a++;
+
+        }
+        System.out.println( sum/count);
+
+    }
+    //Ex 9
+    public void fibonacci(){
+        int n1 = 0 , n2 = 1 , n3 , count = 20 , start = 2 ;
+        System.out.print(n1+" "+n2);
+        while (start <= count ){
+            n3=n1+n2;
+            System.out.print(" "+n3);
+            n1=n2;
+            n2=n3;
+            start++ ;
+        }
+    }
+    public void cozaLozaWoza(){
+        System.out.println("");
+        int start = 1;
+        while (start <= 110){
+            if(start % 3 == 0) {
+                if(start % 5 == 0) {
+                    if(start % 7 == 0)
+                        System.out.print("CozaLozaWoza ");
+                    else
+                        System.out.print("CozaLoza ");
+                }
+                else if(start % 7 == 0)
+                    System.out.print("CozaWoza ");
+                else
+                    System.out.print("Coza ");
+                if(start % 11 == 0)
+                    System.out.println();
+            }
+            else if(start % 5 == 0) {
+                if(start % 7 == 0)
+                    System.out.print("LozaWoza ");
+                else
+                    System.out.print("Loza ");
+                if(start % 11 == 0)
+                    System.out.println();
+            }
+            else if(start % 7 == 0) {
+                System.out.print("Woza ");
+                if(start % 11 == 0)
+                    System.out.println();
+            }
+            else if(start % 11 == 0)
+                System.out.println(start);
+            else
+                System.out.print(start + " ");
+            start++;
+        }
+    }
+
+
+
+
 
 
 
 }
+
