@@ -1,15 +1,40 @@
 public class Calculator {
     public int adunare(int primulNumar, int aldoileaNumar){
 
-    int rezultat = primulNumar + aldoileaNumar;
-    return rezultat;
+    return primulNumar + aldoileaNumar;
+
+    }
+    public int adunare(int primulNumar, int aldoileaNumar, int altreileaNumar){
+
+        return  primulNumar + aldoileaNumar + altreileaNumar;
+
+    }
+    public int adunare(float primulNumar, int aldoileaNumar){
+
+        return  (int)primulNumar + aldoileaNumar ;
+
     }
     public int scadere(int primulNumar, int aldoileaNumar){
         int rezultat = primulNumar - aldoileaNumar;
         return rezultat;
     }
+    public int scadere(int primulNumar, int aldoileaNumar, int altreileaNumar) {
+        int rezultat = primulNumar - aldoileaNumar - altreileaNumar;
+        return rezultat;
+    }
+    public double scadere(double primulNumar, double aldoileaNumar){
+        return primulNumar - aldoileaNumar;
+    }
     public int inmultire(int primulNumar, int aldoileaNumar){
         int rezultat = primulNumar*aldoileaNumar;
+        return rezultat;
+    }
+    public int inmultire(int primulNumar, int aldoileaNumar, int altreileaNumar){
+        int rezultat = primulNumar * aldoileaNumar * altreileaNumar;
+        return rezultat;
+    }
+    public int inmultire(int primulNumar, int aldoileaNumar, int altreileaNumar, int alpatruleaNumar){
+        int rezultat = primulNumar * aldoileaNumar * altreileaNumar * alpatruleaNumar;
         return rezultat;
     }
     public int impartire(int primulNumar, int aldoileaNumar) {

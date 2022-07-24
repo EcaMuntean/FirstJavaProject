@@ -3,6 +3,7 @@ public class Main2 {
 
 
     public static void main(String[] args) {
+        Calculator calculator = new Calculator();
 
         printMyName();
 
@@ -13,8 +14,14 @@ public class Main2 {
         System.out.println("The result is: " + operation3(20,-3,5,8));
         System.out.println("The result is: " + operation4(5,15,3,8,2));
         System.out.println("The result is: " + adunare(2, 3));
+        System.out.println("The result is: " + calculator.adunare(3,5,9));
+        System.out.println("The resul is : " + calculator.adunare(2.5f,4));
         System.out.println("The result is: " + scadere(10, 7));
+        System.out.println("The result is: " + calculator.scadere(100,50,25));
+        System.out.println("The result is: " + calculator.scadere(5.6,2.9));
         System.out.println("The result is: " + inmultire(10, 5));
+        System.out.println("The result is: " + calculator.inmultire(4,7,9));
+        System.out.println("The result is: " + calculator.inmultire(4,7,9,3));
         System.out.println("The result is: " + impartire(10, 5));
         printJava();
         System.out.println("The result is: " + medie(10,15,20));
