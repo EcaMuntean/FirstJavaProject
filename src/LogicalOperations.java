@@ -456,6 +456,7 @@ public class LogicalOperations {
         return false;
 
     }
+
     //Ex.6
     public int getPositionInArray(int[] Numbers, int nr) {
         for (int i = 0; i <= Numbers.length - 1; i++) {
@@ -465,7 +466,7 @@ public class LogicalOperations {
         for (int i = 0; i < Numbers.length; i++) {
 
             if (Numbers[i] == nr) {
-                System.out.println("Numarul se afla pe pozitia: "+ i);
+                System.out.println("Numarul se afla pe pozitia: " + i);
                 return i;
 
             }
@@ -475,11 +476,11 @@ public class LogicalOperations {
         return 0;
 
     }
+
     //Ex.7
     public void drawLines() {
 
         char[] line = {'-', '-', '-', '-', '-', '-', '-', '-', '-', '-',};
-
 
 
         for (int i = 0; i <= 10; i++) {
@@ -489,6 +490,7 @@ public class LogicalOperations {
         }
 
     }
+
     //Ex.8
     public int[] removeNrFromArray(int[] myyArray, int nr) {
 
@@ -513,7 +515,6 @@ public class LogicalOperations {
         int[] finArray = new int[j];
 
 
-
         for (int i = 0; i < j; i++) {
 
             finArray[i] = secondArray[i];
@@ -529,23 +530,22 @@ public class LogicalOperations {
 
 
         int temporary = 0;
-        for(int i = 0; i< mxArray.length;i++){
-            for(int j = i + 1;j<mxArray.length;j++){
-                if(mxArray[i] > mxArray[j]){
+        for (int i = 0; i < mxArray.length; i++) {
+            for (int j = i + 1; j < mxArray.length; j++) {
+                if (mxArray[i] > mxArray[j]) {
                     temporary = mxArray[j];
                     mxArray[j] = mxArray[i];
                     mxArray[i] = temporary;
                 }
             }
         }
-        System.out.println("The second smallest number in the array is: "+ mxArray[1]);
+        System.out.println("The second smallest number in the array is: " + mxArray[1]);
         return mxArray[1];
     }
 
     //Ex.10
 
     public int[] copyArray(int[] firstArray, int[] emptyArray) {
-
 
 
         for (int i = 0, j = 0; i < firstArray.length; i++) {
@@ -559,6 +559,97 @@ public class LogicalOperations {
 
         return emptyArray;
 
+    }
+
+    //Optional array Tema13
+    //Ex1
+    public int[] addOnPosition(int[] testArray, int position, int element) {
+        for (int i = 0; i <= testArray.length - 1; i++) {
+            if (i == position) {
+                testArray[i] = element;
+            }
+            System.out.println(testArray[i]);
+        }
+        return testArray;
+    }
+
+    //Ex2
+    public int getSmallestAndBiggestNrInArray(int[] numbersArray) {
+
+
+        int length = numbersArray.length - 1;
+        int temporarymin = 0;
+        for (int i = 0; i < numbersArray.length; i++) {
+            for (int j = i + 1; j < numbersArray.length; j++) {
+                if (numbersArray[i] > numbersArray[j]) {
+                    temporarymin = numbersArray[j];
+                    numbersArray[j] = numbersArray[i];
+                    numbersArray[i] = temporarymin;
+                }
+            }
+        }
+        System.out.println(numbersArray[0]);
+        System.out.println(numbersArray[length]);
+        return numbersArray[0];
+
+
+    }
+    //Ex3
+    public int[] reverse(int a[], int n)
+    {
+        int[] b = new int[n];
+        int j = n;
+        for (int i = 0; i < n; i++) {
+            b[j - 1] = a[i];
+            j = j - 1;
+        }
+
+        System.out.println("Reversed array is: \n");
+        for (int k = 0; k < n; k++) {
+            System.out.println(b[k]);
+        }
+        return b;
+    }
+    //Ex4
+    public int[] findDuplicates(int[] duplicate) {
+        for (int i = 0; i < duplicate.length; i++) {
+            for (int j = i + 1; j < duplicate.length; j++) {
+                if (duplicate[i] == duplicate[j]) {
+                    System.out.println("Duplicate found: "+ duplicate[i]);
+                }
+            }
+        }
+        return duplicate;
+    }
+    //Ex5
+    public String[] findComunElements(String[] a, String[] b) {
+        for (int i = 0; i < a.length ; i++){
+            for (int j = 0; j < b.length ; j++){
+                if (a[i].equals(b[j])){
+                    System.out.println(a[i]);
+                }
+            }
+        }
+        return a;
+    }
+    //Ex6
+    public int[] orderArray(int[] valuesArray){
+        int length = valuesArray.length - 1;
+        int temporarymin = 0;
+        for (int i = 0; i < valuesArray.length; i++) {
+            for (int j = i + 1; j < valuesArray.length; j++) {
+                if (valuesArray[i] > valuesArray[j]) {
+                    temporarymin = valuesArray[j];
+                    valuesArray[j] = valuesArray[i];
+                    valuesArray[i] = temporarymin;
+                }
+            }
+        }
+        System.out.println("Ordered array is: \n");
+        for (int k = 0; k <= length; k++) {
+            System.out.println(valuesArray[k]);
+        }
+        return valuesArray;
     }
 
 

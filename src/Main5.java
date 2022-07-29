@@ -28,6 +28,20 @@ public class Main5 {
         int[] firstArray = {10,20,30,40,50 };
         int[] emptyArray = new int[firstArray.length];
         logicalOperations.copyArray(firstArray, emptyArray);
+        //tema optionala
+        int[] testArray = {9,10,30,55,12};
+        logicalOperations.addOnPosition(testArray,2,70);
+        int[] numbersArray = {20,204,5,400,12,3};
+        logicalOperations.getSmallestAndBiggestNrInArray(numbersArray);
+        int[] a = {20,56,98,78,100};
+        logicalOperations.reverse(a,a.length);
+        int[] duplicate = {10,6,2,7,9,8,7,10,5,3,9,20,16,15,16};
+        logicalOperations.findDuplicates(duplicate);
+        String[] str1={"ian","feb","mar","apr","mai"};
+        String[] str2={"sept","feb","oct","mai"};
+        logicalOperations.findComunElements(str1,str2);
+        int[] valuesArray={10,50,45,90,61,32,100,3};
+        logicalOperations.orderArray(valuesArray);
 
     }
 
