@@ -1,3 +1,5 @@
+import java.util.List;
+
 public class LogicalOperations {
     public String verifyText(String textInput) {
         if (textInput.equals("FastTrack")) {
@@ -650,6 +652,85 @@ public class LogicalOperations {
             System.out.println(valuesArray[k]);
         }
         return valuesArray;
+    }
+    //Tema 14
+    //Ex.1
+
+    public void printList(List<Integer> myList){
+
+        for (int i = 0; i<myList.size(); i++){
+
+            System.out.println(myList.get(i));
+
+        }
+
+    }
+    //Ex.2
+    public void addNumberToList(List<Integer> myList, int number){
+        myList.add(number);
+        System.out.println(myList);
+
+    }
+    //Ex.3
+    public void printListByIndex(List<Integer> myList, int position){
+
+        for (int i = position;i < myList.size(); i++){
+
+            System.out.println(myList.get(i));
+
+        }
+
+    }
+    //Ex.4
+    public void printListReversed(List<Integer> myList){
+
+        for (int i= myList.size()-1; i >= 0;i--){
+
+            System.out.println(myList.get(i));
+
+        }
+
+    }
+    //Ex.5
+    public void addStringToMyList(List<String> myList, int index, String text){
+
+        myList.add(index,text);
+        System.out.println(myList);
+
+    }
+    //Ex.6
+    public void addNumbertoFirstIndex(List<Integer> myList, int number){
+
+        myList.add(0,number);
+        System.out.println(myList);
+
+    }
+    //Ex.7
+    public void printListIndexAndElements(List<Integer> myList){
+
+        for (int i = 0; i<myList.size(); i++)
+
+            System.out.println("Index "+i+" are elementul "+myList.get(i));
+
+    }
+    //Ex.8
+    public int getBiggestValueFromList (List<Integer> myList){
+
+        int biggest = myList.get(0);
+
+        for (int i=0 ; i<myList.size(); i++){
+
+            if (myList.get(i)>biggest){
+
+                biggest = myList.get(i);
+
+            }
+
+        }
+        System.out.println(biggest);
+
+        return biggest;
+
     }
 
 
