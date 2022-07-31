@@ -1,3 +1,4 @@
+import java.util.ArrayList;
 import java.util.List;
 
 public class LogicalOperations {
@@ -732,6 +733,43 @@ public class LogicalOperations {
         return biggest;
 
     }
+    //Tema optionala 14
+    //Ex.1
+    public void switchElementsOfList(List<Integer> myList){
+        int temporary = myList.get(0);
+        myList.add(0,myList.get(1));
+        myList.add(1,temporary);
+        System.out.println(myList);
+
+        }
+    //Ex.2
+    public void listOfEvenElements(List<Integer> myList){
+        List<Integer> evenList = new ArrayList<>();
+        for (int i = 0; i< myList.size(); i++){
+            if(myList.get(i) % 2 == 0){
+                evenList.add(myList.get(i));
+            }
+        }
+        System.out.println(evenList);
+    }
+    //Ex.3
+   /* public void sortedList(List<Integer> myList){
+
+        int temporary = myList.get(0);
+        for (int i = 0; i < myList.size(); i++){
+            for (int j = i + 1; j < myList.size(); j++){
+                if (myList.get(i) > myList.get(j)){
+                    temporary = myList.get(j);
+                    myList.add(j,myList.get(i));
+                    myList.add(i, myList.get(j));
+                }
+            }
+        }
+        System.out.println(myList);
+    }
+
+    */
+
 
 
 

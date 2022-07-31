@@ -23,5 +23,24 @@ public class Main6 {
         logicalOperations.printListIndexAndElements(listOfInt);
         logicalOperations.getBiggestValueFromList(listOfInt);
 
+        logicalOperations.switchElementsOfList(listOfInt);
+
+        List<Integer> listNew = new ArrayList<>();
+        for (int i = 1 ; i <= 10; i++){
+            listNew.add(i);
+        }
+        logicalOperations.listOfEvenElements(listNew);
+        List<Integer> unsrotedList = new ArrayList<>();
+        unsrotedList.add(5);
+        unsrotedList.add(2);
+        unsrotedList.add(7);
+        unsrotedList.add(9);
+        unsrotedList.add(1);
+        unsrotedList.add(6);
+        unsrotedList.add(4);
+        unsrotedList.add(3);
+        unsrotedList.add(0);
+        logicalOperations.sortedList(unsrotedList);
+
     }
 }
